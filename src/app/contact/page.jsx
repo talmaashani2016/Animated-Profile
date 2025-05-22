@@ -17,8 +17,8 @@ const ContactPage = () => {
         setSucess(false)
 
         emailjs
-            .sendForm("service_v89wamk", "template_1hhbbn9", {
-                publicKey: "DD3mRbBvLBK9z5Umc",
+            .sendForm("service_v89wamk", "template_1hhbbn9", form.current, {
+                publicKey: 'szD4rkXr0Kg6Kw1xt',
             })
             .then(
                 () => {
