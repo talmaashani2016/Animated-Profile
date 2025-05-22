@@ -26,7 +26,7 @@ const ContactPage = () => {
                     form.current.reset()
                 },
                 (error) => {
-                    console.log('FAILED...', error);
+                    // console.log('FAILED...', error);
                     setError(true)
 
                 },
@@ -55,9 +55,9 @@ const ContactPage = () => {
                 <div className='h-2/3-[20px] lg:h-full w-full lg:w-1/2 flex items-center justify-center lg:pb-20 lg:pt-20 md:pb-20'>
                     <form ref={form} onSubmit={sendEmail} className='flex bg-red-50 rounded-xl lg:text-xl text-md m-5 p-16 justify-center h-full-[20px] w-full flex-col gap-8 justifiy-center'>
                         <span>Dear Tariq AL Maashani, </span>
-                        <textarea rows={4} name="user_message" placeholder='Add your Message here...' className='bg-transparent border-b-2 border-black outline-none resize-none' />
+                        <textarea required rows={4} name="user_message" placeholder='Add your Message here...' className='bg-transparent border-b-2 border-black outline-none resize-none' />
                         <span>My Email Address is:</span>
-                        <input type="text" name="user_email" className='bg-transparent border-b-2 border-black outline-none' />
+                        <input required type="text" name="user_email" className='bg-transparent border-b-2 border-black outline-none' />
                         <span>Regards</span>
                         <button type="submit " className='bg-purple-200 rounded font-semibold text-gray-600 p-2 xl:p-4 cursor-pointer'>Send</button>
                         {sucess && <span className='text-green-600 font-semibold'> Your Message has been sent successfully!🫡</span>}

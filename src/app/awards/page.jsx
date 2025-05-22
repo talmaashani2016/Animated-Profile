@@ -13,7 +13,7 @@ const page = () => {
 
         { icon: "./Mitsubishi_logo.svg", strong: "Master's Degree Scholarship - Mitsubishi Sumitomo Corporation", rest: "Awarded a prestigious Master's Degree Scholarship by Mitsubishi Sumitomo Corporation in collaboration with the Ministry of Higher Education, Innovation & Research (MOHERI), Sultanate of Oman, for the academic years 2021-2023. This significant sponsorship underscores a commitment to advanced education and professional development." },
         { icon: "./kumdai.png", strong: "International Presentation: DSP Rhodes, Greece", rest: "Had the distinct honor of representing Kumamoto University at the prestigious DSP Rhodes conference in Greece, 2023. This international presentation showcased academic work and fostered global collaboration within the field." },
-        { icon: "./OQBI_Logo_10.png", strong: "Industry Engagement: Comex 2024", rest: "Represented OQ Base Industries at Comex 2024, a premier technology exhibition held in Muscat, Oman. This participation highlights engagement with cutting-edge industry trends and advancements." },
+        { icon: "./oqbi.png", strong: "Industry Engagement: Comex 2024", rest: "Represented OQ Base Industries at Comex 2024, a premier technology exhibition held in Muscat, Oman. This participation highlights engagement with cutting-edge industry trends and advancements." },
     ]
     const listItemVariants = {
         closed: {
@@ -39,7 +39,7 @@ const page = () => {
                     <motion.div className=' flex flex-col  items-center justify-center'
                         initial={{ opacity: 0, x: -400 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
                         viewport={{ once: true }} // Ensures animation runs only once
 
                     >
