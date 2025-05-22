@@ -14,7 +14,7 @@ const PortfolioPage = () => {
             color: "from-red-300 to-blue-300",
             title: "AI-Powered PostgreSQL with Node.js",
             desc: " Unlock the power of your data with this Node.js project! It demonstrates an AI agent that connects directly to PostgreSQL, enabling intelligent interaction with your structured information. This is your essential toolkit for building applications that don't just store data, but actively understand, process, and leverage it.",
-            img: "./aiProject.png",
+            img: "/aiProject.png",
             link: "https://github.com/talmaashani2016/AI-Agent-Tasks",
         },
         {
@@ -22,7 +22,7 @@ const PortfolioPage = () => {
             color: "from-blue-300 to-violet-300",
             title: "An Animated Portfolio Experience",
             desc: "Step into my world of innovation! This Next.js-powered animated portfolio offers a dynamic way to explore my certifications, professional milestones, and the impactful projects I've recently completed. Get a vivid sense of my skills and passion, and connect with me directly to discuss how I can contribute to your next endeavor.",
-            img: "./profile.png",
+            img: "/profile.png",
             link: "https://github.com/talmaashani2016/",
         },
         {
@@ -30,7 +30,7 @@ const PortfolioPage = () => {
             color: "from-violet-300 to-purple-300",
             title: "Classifying Age and Sentiment from Voice using ML",
             desc: "Discover how machine learning can interpret human voice to reveal insights about age and sentiment. This project implements and evaluates a range of powerful algorithms, from the intricate patterns learned by Convolutional Neural Networks (CNN) to the robust capabilities of non-parametric classifiers such as K-Nearest Neighbors (KNN) and Label Propagation (LP). Our aim is to develop accurate and efficient models for understanding demographic and emotional cues embedded within speech.",
-            img: "./classification.png",
+            img: "/classification.png",
             link: "https://ieeexplore.ieee.org/document/10167887",
         },
         {
@@ -38,7 +38,7 @@ const PortfolioPage = () => {
             color: "from-purple-300 to-red-300",
             title: "GNU-Cash Linux: CI & CD",
             desc: "Development of a GNU-Cash web application on Linux, focusing on expanding its capabilities. This involves the systematic process of installing and configuring new external libraries within the GNU-Cash Linux ecosystem. A critical component is the establishment of a Continuous Integration (CI) pipeline, likely leveraging Git for source code management, to automate testing procedures and maintain a high standard of code integrity and deployment readiness.",
-            img: "./gnu.png",
+            img: "/gnu.png",
             link: "https://github.com/talmaashani2016/gnucash",
         },
     ];
@@ -47,8 +47,8 @@ const PortfolioPage = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"])
     return (
         <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-            <div className='h-[600vh] relative' ref={ref}>
-                <div className='w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center'>My Work</div>
+            <div className='h-[600vh] relative ' ref={ref}>
+                <div className='w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center '>My Work</div>
                 <div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
                     <motion.div style={{ x }} className='flex'>
                         <div className='h-screen w-screen flex items-center justify-center bg-gradient-to-r  from-purple-300 to-red-300' />
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
                                         <Image src={item.img} alt='' fill className='object-contain' />
                                     </div>
                                     <p className='w-80 md:w-96 lg:w-[500px] xl:w-[600px] lg:text-lg font-semibold'>{item.desc}</p>
-                                    <Link href={item.link} className='flex justify-end' target='_blank'>
+                                    <Link href={item.link} className='flex justify-center' target='_blank'>
                                         <button className='p-1 cursor-pointer text-sm md:p-2 md:text-md lg:p-4 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded ring-4 ring-white hover:bg-transparent hover:text-white'>See Demo</button></Link>
                                 </div>
 

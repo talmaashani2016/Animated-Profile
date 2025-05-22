@@ -2,6 +2,7 @@
 
 const nextConfig = {
     basePath: '', // not needed
+    assetPrefix: '',
     images: {
         remotePatterns: [
             {
