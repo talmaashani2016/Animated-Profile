@@ -36,7 +36,7 @@ const PortfolioPage = () => {
         {
             id: 4,
             color: "from-purple-300 to-red-300",
-            title: "GNU-Cash Linux Web Application: CI & CD",
+            title: "GNU-Cash Linux: CI & CD",
             desc: "Development of a GNU-Cash web application on Linux, focusing on expanding its capabilities. This involves the systematic process of installing and configuring new external libraries within the GNU-Cash Linux ecosystem. A critical component is the establishment of a Continuous Integration (CI) pipeline, likely leveraging Git for source code management, to automate testing procedures and maintain a high standard of code integrity and deployment readiness.",
             img: "./gnu.png",
             link: "https://github.com/talmaashani2016/gnucash",
