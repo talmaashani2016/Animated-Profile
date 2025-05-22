@@ -26,7 +26,7 @@ const ContactPage = () => {
                     form.current.reset()
                 },
                 (error) => {
-                    // console.log('FAILED...', error);
+                    console.log('FAILED...', error);
                     setError(true)
 
                 },
