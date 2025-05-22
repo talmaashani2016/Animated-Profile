@@ -43,7 +43,7 @@ const page = () => {
                         viewport={{ once: true }} // Ensures animation runs only once
 
                     >
-                        <Image src='https://lh3.googleusercontent.com/s7o1V7MdXaWbNNCR_CIesOybC8FNrKFnRXMJauon10HRy2oIkGz7vy7DoTOrqil4hQaM88nwJMefhO2YMBqzpQM=w16383'
+                        <Image src='./me.jpg'
                             alt=''
                             width={800}
                             height={600}

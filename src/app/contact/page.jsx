@@ -17,8 +17,8 @@ const ContactPage = () => {
         setSucess(false)
 
         emailjs
-            .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
-                publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+            .sendForm("service_v89wamk", "template_1hhbbn9", {
+                publicKey: "DD3mRbBvLBK9z5Umc",
             })
             .then(
                 () => {
@@ -26,7 +26,9 @@ const ContactPage = () => {
                     form.current.reset()
                 },
                 (error) => {
+                    console.log('FAILED...', error);
                     setError(true)
+
                 },
             );
     };
