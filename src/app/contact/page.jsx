@@ -17,8 +17,13 @@ const ContactPage = () => {
         setSucess(false)
 
         emailjs
+<<<<<<< HEAD
             .sendForm("service_v89wamk", "template_1hhbbn9", form.current, {
                 publicKey: 'szD4rkXr0Kg6Kw1xt',
+=======
+            .sendForm("service_v89wamk", "template_1hhbbn9", {
+                publicKey:"szD4rkXr0Kg6Kw1xt",
+>>>>>>> 3db2a4e93c6bac99db6a68b2d23a42872174fcfe
             })
             .then(
                 () => {
