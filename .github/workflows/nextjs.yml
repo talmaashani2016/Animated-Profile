@@ -61,6 +61,12 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Set Environment Variables
+        run: |
+          echo "NEXT_PUBLIC_API_KEY=${{ secrets.NEXT_PUBLIC_API_KEY }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_SERVICE_ID=${{ secrets.NEXT_PUBLIC_SERVICE_ID }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_TEMPLATE_ID=${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}" >> $GITHUB_ENV
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
