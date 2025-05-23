@@ -37,10 +37,10 @@ const page = () => {
                 <div className="h-full flex flex-col lg:flex-row lg:gap-10 px-4 py-2 md:gap:50 bg-red-50 rounded">
 
                     <motion.div className=' flex flex-col  items-center justify-center'
-                        initial={{ opacity: 0, x: -400 }}
+                        initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, ease: "easeInOut" }}
-                        viewport={{ once: true }} // Ensures animation runs only once
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                    // viewport={{ once: true }} // Ensures animation runs only once
 
                     >
                         <Image src='/me.jpg'
@@ -56,7 +56,7 @@ const page = () => {
                         {text.map((item, index) => (
                             <div key={index} className='flex gap-2 items-start'>
                                 <Image className='object-contain' src={item.icon} alt="" width={32} height={32} />
-                                <p key={index}><strong className='text-red-400'><TypingEffect text={item.strong} />:</strong> <TypingEffect text={item.rest} /></p>
+                                <p key={index}><strong className='text-red-400'><TypingEffect text={item.strong} />:</strong> {item.rest}</p>
                             </div>
 
 

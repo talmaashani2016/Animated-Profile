@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <motion.div className="h-full overflow-auto" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-      <div className="h-full flex flex-col lg:flex-row lg:gap-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 text-lg ">
+      <div className="h-full flex flex-col lg:flex-row gap-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 text-lg mb-20">
         {/* // Image Container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image src="/hero.png" alt="" fill className="object-contain"></Image>

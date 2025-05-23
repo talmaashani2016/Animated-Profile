@@ -27,7 +27,7 @@ const page = () => {
 
     return (
         <motion.div className="h-full overflow-x-hidden relative  " initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-            <div className='flex flex-col p-4 xm:p-8 sm:p-8 md:p-12 lg:p-20 xl:p-30 gap-10 items-center justify-center'>
+            <div className='flex flex-col p-4 xm:p-8 sm:p-8 md:p-12 lg:p-20 xl:p-30 gap-10 items-center justify-center mb-10'>
                 <h1 className='w-screen h-[20vh] flex items-center justify-center text-6xl text-center md:text-6xl lg:text-8xl sm:text-6xl xl:text-8xl'> Certificates</h1>
                 <motion.div
                     initial="hidden"
